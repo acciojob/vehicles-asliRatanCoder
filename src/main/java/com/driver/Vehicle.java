@@ -21,7 +21,7 @@ public class Vehicle {
         this.type = "SUV";
         this.doors = 4;
         this.gears = 5;
-        this.isManual = false;
+        this.isManual = true;
         this.seats = 7;
         this.currentGear = 2;
     }
@@ -44,15 +44,18 @@ public class Vehicle {
         System.out.println("stop method called - The vehicle is stopped");
     }
 
-    // public int getCurrentSpeed() {
-    //     return currentSpeed;
-    // }
-    // public int getCurrentDirection() {
-    //     return currentDirection;
-    // }
-    // public String getName() {
-    //     return name;
-    // }
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public int getCurrentDirection() {
+        return currentDirection;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public int getWheels() {
         return wheels;
     }
